@@ -266,21 +266,21 @@ The process involves measuring the quality dimensions that are relevant to the u
 %* relation to other quality dimensions
 % Introduce and explain the 6 super classes of the dimensions: intrinsic, contextual, provenance, accessibility, representation, dataset dynamicity
 After analyzing the 20 selected approaches, we identified 25 different data quality dimensions that can be applied to assess the quality of Linked Data. 
-In this section, we thus attempt to formalize and adapt the definitions for each of the dimensions to be applicable in the Linked Data context.
-Additionally, we also classify the dimensions into six different groups, such as
+In this section, we formalize and adapt the definitions for each of the dimensions applicable in the Linked Data context.
+Additionally, we also classify the dimensions into six different overarching groups, namely
 \begin{itemize}
-\item \textit{Contextual dimensions} are those that highly depend on the context of the task at hand as well as the subjective preferences of the data consumer.
-\item \textit{Provenance} related dimensions are those that focus on the provenance and trustworthiness of the data.
-\item \textit{Intrinsic dimensions} are those that are independent of the user's context. 
-These dimensions focus on whether information correctly represents the real world and whether
-information is logically consistent in itself.
-\item \textit{Accessibility dimensions} involves aspects related to the accessing of information.
-\item \textit{Representational} dimensions capture aspects related to the design of the data like the conciseness, consistency as well as the interpretability of information.
-\item \textit{Dataset dynamicity} contains dimensions related to the timeliness of the data. 
+\item \textit{Contextual dimensions} are highly dependent on task context as well as the subjective preferences of the data consumer. %would be good to add an example to put this in context. same for the ones below
+\item \textit{Provenance} focuses on the traceability and trustworthiness of the data.
+\item \textit{Intrinsic dimensions} are are independent of the user's context. 
+These dimensions focus on whether information correctly represents the world and whether
+information maintains an internal logical consistency. 
+\item \textit{Accessibility dimensions} relates to the ability to reach the data. %I would keep a distinction between data and information, these are two very different things. data is meaningless without modeling, information is what you extract out of the data 
+\item \textit{Representational} dimensions capture aspects related to the design of the data such as conciseness, consistency, and data interpretability. 
+\item \textit{Dataset dynamicity} relates to the timeliness of the data. 
 In particular, it focuses on two aspects: the currency (if the data is up-to-date) and volatility (time period of validity) of the data.
 \end{itemize}
 
-Figure~\ref{fig:dimrel} shows the classification of the dimensions in the above mentioned groups as well as the inter and intra relations between them.
+Figure~\ref{fig:dimrel} shows the dimension classification in the above mentioned groups as well as the inter and intra relations between them.
 
 \subsubsection{Provenance}
 The ability to track the origin of data is a key component in building trustworthy, reliable applications.
@@ -292,8 +292,10 @@ Similarly Flemming et al.~\cite{Flemming} and Hogan et al.~\cite{Hogan} define c
 Mendes~\cite{Mendes} gives a more generic definition by determining a consistent dataset if it is free of conflicting information.
 Consistency is considered a sub-dimension of representational consistency and is marked as an intrinsic dimension. 
 
-An example of inconsistency can be the usage of disjoint classes \cite{Hogan}: the classes \texttt{foaf:Person} and \texttt{foaf:Document} are defined as being disjoint therefore an instance cannot belong to both classes. 
+An example of inconsistency is the usage of disjoint classes \cite{Hogan}: the classes \texttt{foaf:Person} and \texttt{foaf:Document} are defined as being disjoint therefore an instance cannot belong to both classes. 
 %Other consistency issues identified are: improper use of inverse-functional properties, lacking usage of homogeneous datatypes, inconsistent use of terms in a vocabulary. 
+
+% i think these examples are absolutely essential, as they will provide context to the classification. i think that examples are so crucial that you might consider keeping a companion web site with a collection of examples, with forums where people can discuss them. examples are so crucial in the context of a classification because they will increase observer agreement, meaning that two people looking at the same data quality issue will classify it the same way
 Lei et al. \cite{Lei} also determine the issue of inconsistent use of terms in a vocabulary as a problem of deficiency, which denotes the situation of an inconsistent instance defined in an ontology. 
 For example, an organization ontology may define that there should be only one director for an organization. 
 The inconsistency problem occurs when there are two directors in the dataset.

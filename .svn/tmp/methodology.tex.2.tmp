@@ -1,0 +1,319 @@
+Two reviewers, from independent institutions, conducted the systematic review following the standard procedures as described in \cite{kitchenham:2004, Moher:2009}. A systematic review can be addressed for several reasons such as the summarisation and comparison in terms of advantages and disadvantages of the approaches applied on a same evidence, the identification of uncovered problems, or the generation of a new idea to cover the emphasized problems. Our systematic review was conducted as an hybrid of the first and second reason by creating first a set of rules used for arranging our work which were followed by the definition of a research question. Therefore, the research question we defined conducted us through two individual literature search.
+
+%then compared results to agree to a final list of papers to be included in the study. Both conducted the qualitative and quantitative review of the articles.
+
+\subsection{Verify whether a similar systematic review already exists}
+In order to justify the need of conducting the systematic review, we first conducted a search to ensure that a similar study has not already been done. This ensures that the formulated research question was not already answered through previous answers. We did not come across any study focused on data quality assessment methodologies for Linked Data datasets. However, we came across a comprehensive review \ref{Batini:2006}, which reviews 12 methodologies for assessing the data quality of datasets available on the web in structured or semi-structured formats.
+
+\subsection{Formulate a research question}
+The goal of this review is to analyse existing methodologies for assessing the quality of structured data, with particular interest in Linked Data.
+To achieve this goal, we aim to answer the following general research question: \\
+\textit{What are the existing approaches/methodologies for assessing the quality of Linked Data datasets?}\\We can divide this general research question into small research question as in the following: \\
+-\textit{What are the problems that each methodology wants to tackle?}\\
+-\textit{What are the quality criteria supported by the proposed methodologies?}\\
+-\textit{What are the assessment methods proposed by the different methodologies?}
+
+\subsection{Define eligibility criteria}
+The eligibility criteria is an important element of any systemtic review. First, each member created a set of inclusion and exclusion criteria on their own. Second, as a result of a discussion between both members a list of eligible criteria was obtained as follows:
+\begin{itemize}
+\item Inclusion criteria:
+\begin{itemize}
+\item Studies that were published in English between 2005 and 2012.
+\item Studies that were focused on data quality assessment in Linked Data datasets
+\item Studies that were focused on data quality assessment of structured data
+\end{itemize}
+\item Exclusion criteria:
+\begin{itemize}
+\item Studies that were focused on data quality management.
+\item Studies that does not focus neither on Linked Data nor on structured data such as ontology assessment.
+\item Studies that does non propose any methodology or framework about the assessment of quality in Linked Data
+\item Studies that does not focus on quality assessment of Linked Data but only mentions the term e.g
+\end{itemize}
+\end{itemize}
+\begin{figure*}[ht]
+
+\includegraphics[width=6.5in]{Numberofarticles.pdf}
+\caption{Number of articles retrieved during literature search.}
+\label{fig:noofarticles}
+\end{figure*}
+
+\subsection{Build and run search strategy}
+%Ex spreadsheet: http://goo.gl/3s8GV
+It is necessary to build and follow a search strategy. Search strategies are usually iterative and are ran separately by both members. Therefore, we created two spreadsheets where we could store and keep trace of our search strategy. Based on the research question and the eligible criteria, first we identified several terms to be most
+appropriate for the systematic review: \textit{data}, \textit{quality}, \textit{data quality}, \textit{assessment}, \textit{evaluation}, \textit{methodology}, \textit{improvement}, or \textit{linked data}, which are used as follows:
+\begin{itemize}
+\item \textit{linked data} and (\textit{quality} OR \textit{assessment} OR \textit{evaluation} OR \textit{methodology} OR \textit{improvement})
+\item  \textit{data} OR \textit{quality} OR \textit{data quality} AND \textit{assessment} OR \textit{evaluation} OR \textit{methodology} OR \textit{improvement}
+\end{itemize}
+The next decision was to find the suitable field (i.e. title, abstract and full-text) to apply the search
+string on. In our experience, searching in the \textit{title} alone does not always provide us with all relevant publications. Thus, \textit{abstract} or \textit{full-text} of publications should potentially be included. On the
+other hand, since the search on the full-text of studies results in many irrelevant publications, we chose
+to apply the search query additionally on the \textit{abstract} of the studies. This means a study is selected
+as a candidate study if its \textit{title} or \textit{abstract} contains the keywords defined in the search string.
+
+After we defined the search strategy, we chose the right databases for our research. The searches were done in the following list which include search engines and digital libraries:
+\begin{itemize}
+\item Google Scholar
+\item ISI Web of Science
+\item ACM Digital Library
+\item IEEE Xplore Digital Library
+\item Springer Link
+\item Science Direct
+\end{itemize}
+List of journal:
+\begin{itemize}
+\item Semantic Web Journal
+\item Journal of Web Semantics
+\item Journal of Data and Information Quality
+\item Journal of Data and Knowledge Engineering
+\end{itemize}
+
+Conferences and their Respective Workshops:
+\begin{itemize}
+\item International Semantic Web Conference (ISWC)
+\item European Semantic Web Conference (ESWC)
+\item Asian Semantic Web Conference (ASWC)
+\item International World Wide Web Conference (WWW)
+\item Semantic Web in Provenance Management (SWPM)
+\item Consuming Linked Data (COLD)
+\item Linked Data on the Web (LDOW)
+\item Web Quality
+\end{itemize}
+For the journal list and the conferences we conducted a hand search to get more potential articles. First we looked at the table of contents of the key journals and conferences and second we extracted any article identified as a potential match based on eligibility criteria.
+The bibliographic metadata about each primary study were recorded using the bibliography management platform Mendeley\footnote{https://www.mendeley.com/}.
+
+\subsection{Reviewing titles and abstracts}
+Both reviewers independetly screen the titles and abstracts of the retrieved literature to identify the potentially eligible articles. After comparing the shortlisted potentially eligible articles based on the eligibility criteria then we finalized the list by mutual agreement. In case of disagreement we resolved the problem either by mutual consensus or we created a list of articles to go under a more detailed review. Thus, each of the reviewers read the title and the abstract again and also the full-text for getting more detailed information. Finally, we merged both manuscript lists from each reviewers by removing the duplicated records.
+
+\subsection{Retrieve and analyze other potential articles}
+The other strategy decisions was to apply further steps such as:
+\begin{itemize}
+\item Look at the reference in the selected papers.
+\item Take the title of the paper and put it in Google Scholar and look at "Cited By" papers and retrieve the article if it is related to the eligible criteria.
+\item Take each data quality criteria individually and perform a related article search.
+\end{itemize}
+from References of selected articles and then evaluate them for inclusion/exclusion criteria
+
+\subsection{Abstract data for quantitative and qualitative analysis}
+
+As shown in Figure \ref{fig:noofarticles}, we first applied the search query on each data source separately. To remove irrelevant studies from the result returned from the different data sources, we scanned the articles by title based on the eligibility criteria. We further imported the results obtained to Mendeley to remove duplicate studies. Subsequently, we reduced the number of studies to 182. Then, we read the abstract of each publication carefully and further we retrieve and analyse paper from the references and we obtained 68 number of studies. Finally, we compared  the shortlisted articles among reviewers by scanned the full-text of the publications. The result comprised 9 articles related to methodologies for assessing Linked Data which will be our final set of primary studies and 24 article related to provenance.
+
+\textit{To analyze the information appropriately, we required a suitable qualitative data analysis method applicable to our dataset. We used coding as our qualitative analysis methods}
+
+\subsection{List of selected papers}
+%Out of the total number of articles retrieved from the initial literature survey, most were only related to the general aspects of data quality assessment of the data available on the Web. After refining our search strategy by using a combination of keywords and the advanced search forms available for most of the online databases, we retrieved (no.?) of articles. After reading through the articles in detail, only 9 were identified to be specifically those reporting a methodology or framework for data quality assessment of Linked Data. %Out of the 9 articles, (no.) are from the year (?), (conference/journal). Additionally, those articles related to provenance quality assessment, were also retrieved. A total number of (48?) articles were identified. 
+
+The result of the above describe methodology is 21 papers from 2003 to 2012 that are reported in Table~\ref{selectedpapers} and that will be the core of our surveys.
+
+\begin{table*}[htb]
+\caption{List of the selected papers.} 
+\label{selectedpapers}
+\begin{tabular}{ | p{2.7cm} | p{10cm} | }
+\hline
+\textbf{Citation} & \textbf{Title} \\
+\hline
+Bizer et.al.,2009 & Quality-driven information filtering using the WIQA policy framework \\	
+\hline
+B\"ohm et.al., 2010 & Profiling linked open data with ProLOD \\	
+\hline
+Chen et.al., 2010 & Hypothesis generation and data quality assessment through association mining \\
+\hline
+Flemming et.al., 2010 & Assessing the quality of a Linked Data source \\
+\hline
+Gu\'eret, 2011 & Linked Data Quality Assessment through Network Analysis \\
+\hline
+Hogan et.al., 2010 & Weaving the Pedantic Web \\
+\hline
+Hogan et.al.,2012 & An empirical survey of Linked Data conformance \\
+\hline
+Lei et.al., 2007 & A framework for evaluating semantic metadata \\
+\hline
+Mendes et.al.,2012 & Sieve: Linked Data Quality Assessment and Fusion \\
+\hline
+Mostafavi et.al., 2004 & An ontology-based method for quality assessment of spatial data bases	\\
+\hline
+Hartig, 2009  & Trustworthiness of Data on the Web \\
+\hline
+Hartig et.al., 2009 & Using Web Data Provenance for Quality Assessment \\
+\hline
+Gamble et.al., 2011 & Quality, Trust, and Utility of Scientific Data on the Web: Towards a Joint Model \\
+\hline
+Shekarpour et.al., 2008 & Modeling and evaluation of trust with an extension in semantic web \\
+\hline
+Golbeck et.al., 2006 & Using Trust and Provenance for Content Filtering on the Semantic Web \\
+\hline
+Gil et.al., 2002 & Trusting Information Sources One Citizen at a Time \\
+\hline
+Golbeck et. al., 2003 & Trust Networks on the Semantic Web \\
+\hline
+Gil et.al., 2007 & Towards content trust of web resources \\
+\hline
+Jacobi et.al., 2011 & Rule-Based Trust Assessment on the Semantic Web \\
+\hline
+Bonatti et. al., 2012 & Robust and scalable linked data reasoning incorporating provenance and trust annotations \\
+\hline
+Maurino et.al., 2012 & Capturing the Age of Linked Open Data: Towards a Dataset-independent Framework \\
+\hline
+\end{tabular}
+\end{table*}
+
+\subsection{Comparison perspective of selected papers}
+%I would call it Qualitative review of selected papers
+There exist several perspectives that can be used to analyze and compare selected papers:
+\begin{enumerate}
+\item the phases/steps that compose the assessment analysis
+\item the dimensions that are chosen in the papers to assess data quality levels;
+\item the metrics associated to dimensions
+\item the types of data that are considered in papers;
+\item the level of automatization of supported tools
+\end{enumerate}
+
+Selected papers differ in how they consider all of these perspectives.
+Assessment activity measures the quality of data collections along relevant quality dimensions. 
+
+%The steps of the assessment are:
+\subsubsection{Data quality assessment steps}
+
+Table~\ref{metricsteps} comprises of the steps involved in the data quality assessment process. 
+
+Assessment steps: related to the common steps of each work used to assess the quality in LOD. For each step we provide input and output, a supported tool and the involvement of the user in the tool usage.  
+The "Assessment steps" measures the quality of data collections along relevant quality dimensions; in particular the measurement of quality dimensions is provided by a set of metrics defined for each dimension. From the selected paper we identify the following sequence of activities customized by  different data quality methods:
+\begin{itemize}
+\item Requirements analysis (optional): The multidimensionality of the information quality makes it dependent on a number of factors that can be achieved by the analyses of the user requirements. The requirement analysis is optional since it is not always provided from the methods provided in LOD papers.
+\item Data Quality Checklist: estimates only those metrics for which we may answer yes or no. 
+\item Statistics and low-level analysis: provides some generic statistics on the dataset based on some heuristics.
+\item Aggregated and higher level metrics: in this category we include all the metrics that are not included in the Data Quality Checklist. Furthermore, in this step the single metrics or the combination of them produce a value within a range [0;1]. 
+\item Comparison (optional): used when the resulted measurements provided in step "Aggregated and higher level metrics" are compared to reference values such as previous values from dataset in the same domain or gold standard values, in order to enable a diagnosis of quality. 
+\item Interpretation: gives an interpretation to the results obtained from step Data Quality Checklist or Aggregated and higher level metrics.
+\end{itemize}
+
+\subsubsection{Dimensions and Metrics}
+<<<<<<< .mine
+The definition of \emph{the dimensions, and metrics} to assess data quality is a critical activity. 
+In general, multiple metrics can be associated with each quality dimension. 
+In some cases, the metric is unique and the theoretical definition of a dimension coincides with the operational definition of the corresponding metric.
+Due to the that the linked open data paradigm is the fusion of three different research areas namely \emph{semantic web } (for the capability to generate semantic connections among data),  \emph{world wide web} (related to the availability and open access to such data) and \emph{data management} (thanks to the fact that there is the need to mange large set of heterogeneous and distributed data), selected papers uses quality dimension taken for the specific area. 
+Thus for example in the data management literature provides a thorough classification of data quality dimensions.  
+The six most important classifications of quality dimensions are provided by Wand and Wang [1996]; Wang and Strong [1996]; Redman [1996]; Jarke et al. [1995]; Bovee et al. [2001]; and Naumann [2002]. By analyzing these classifications, it is possible to define a basic set of data quality dimensions, including accuracy, completeness, consistency, and timeliness, which constitute the focus of the majority of authors [Catarci and Scannapieco 2002].
+However, no general agreement exists either on which set of dimensions defines the quality of data, or on the exact meaning of each dimension, and also in the lod field we find the same problem.
+=======
+The definition of \emph{the qualities dimensions, and metrics} to assess
+data is a critical activity. In general, multiple metrics can be associated with each
+quality dimension. In some cases, the metric is unique and the theoretical definition of
+a dimension coincides with the operational definition of the corresponding metric.
+Due to the that the linked open data paradigm is the fusion of three different research areas namely \emph{semantic web } (for the capability to generate semantic connections among data),  \emph{world wide web} (related to the availability and open access to such data) and \emph{data management} (thanks to the fact that there is the need to mange large set of heterogeneous and distributed data), selected papers uses quality dimension taken for the specific area. thus for example in the data management literature provides a thorough classification of data quality dimensions.  The six most important classifications of quality
+dimensions are provided by Wand and Wang [1996] \cite{Wand:1996}; Wang and Strong [1996] \cite{Wang:1996}; Redman
+[1996] \cite{Redman:1997}; Jarke et al. [1995]; Bovee et al. [2001]; and Naumann [2002]. By analyzing these
+classifications, it is possible to define a basic set of data quality dimensions, including
+accuracy, completeness, consistency, and timeliness, which constitute the focus of the
+majority of authors [Catarci and Scannapieco 2002].
+However, no general agreement exists either on which set of dimensions defines the
+quality of data, or on the exact meaning of each dimension, and also in the lod field we find the same problem
+>>>>>>> .r12025
+Concerning the web field the most important dimensions are the provenance \cite{}, trust\cite{}, ADD OTHER
+%Concerning semantic web, the most important dimensions are:  
+%Provenance, Consistency, Timeliness, Accuracy, Completeness, Amount of Data, Availability (accessibility), Understandability (Comprehensibility), Relevancy, Reputation, Verifiability, Interpretability, Rep. Conciseness, Rep. Consistency, Licencing, Performance, Objectivity, Believability, Response Time, Security, Uniformity, Versatility, Validity of documents, Conciseness, Coherence (linking - internal/external) and Trust.
+
+\subsubsection{Type of data}
+The ultimate goal of an assessment activity is the analysis of data that, in general, describes real world objects in a format that can be stored, retrieved, and processed by a software procedure, and communicated through a network. 
+In the field of lod, most authors either implicitly or explicitly distinguish three types of data:
+\begin{itemize}
+\item RDF triple. Given an infinite set $\mathcal{U}$ of URIs (resource identifiers), an infinite set $\mathcal{B}$ of blank nodes, and an infinite set $\mathcal{L}$ of literals, a triple $ \langle s, p, o \rangle \in (\mathcal{U} \cup \mathcal{B})\times \mathcal{U} \times (\mathcal{U} \cup \mathcal{B} \cup \mathcal{L})$ is called an RDF triple; $s$, $p$, $o$ are called, respectively, the subject, the predicate and the object of the triple.
+\item Graph. An RDF graph $G$ is a set of RDF triples. A named graph is a pair  $\langle G,u \rangle$, where $G$ is called the default graph and $u\in\mathcal{U}$. [ANDREA we need to underline that a graph is a set of datasource provided by different providers]
+\item Dataset. An RDF dataset is a set of default and named graphs = $\lbrace G, (u_1,G_1), (u_2,G_2), ...(u_n,G_n)\rbrace$.
+\end{itemize}
+
+\subsubsection{Level of automatization}
+<<<<<<< .mine
+A set of software tools are needed for supporting the assessment phase. 
+Such tools implements the methodologies and metrics defined in the above described steps. 
+Due to the nature of the quality dimensions and related metrics it is possible that some activities are fully or semi automatically or manually realized. =======
+A set of software tools are needed for supporting the assessment phase. such tools implements the methodologies and metrics defined in the above described steps. Due to the nature of the quality dimensions and related metrics it is possible that some activities are fully or semi automatically or manually realized. 
+
+
+%\subsection{Conceptualization}
+%\label{concepts}
+%\paragraph{Definition of Terminologies.}
+%A generalized architecture of data quality is depicted in Figure. 
+%There exist a number of discrepancies in the definition of many concepts, especially in data quality due to the contextual nature of quality~\cite{Batini:2006} .
+%Therefore, in the sequel we describe and formally define the research context terminology as well as individual components and concepts in more detail.
+%
+%\textbf{RDF Dataset.}
+%%In this document, we understand a data source as an access point for Linked Data in the Web. It provides a dataset and it may support multiple methods of access.
+%
+%The RDF triples, RDF graph and the RDF datasets have been adopted by the W3C Data Access Working Group \cite{Las99,Hayes:2004,Brickley-2004}
+%
+%Given an infinite set $\mathcal{U}$ of URIs (resource identifiers), an infinite set $\mathcal{B}$ of blank nodes, and an infinite set $\mathcal{L}$ of literals, a triple $ \langle s, p, o \rangle \in (\mathcal{U} \cup \mathcal{B})\times \mathcal{U} \times (\mathcal{U} \cup \mathcal{B} \cup \mathcal{L})$ is called an RDF triple; $s$, $p$, $o$ are called, respectively, the subject, the predicate and the object of the triple. An RDF graph $G$ is a set of RDF triples. A named graph is a pair  $\langle G,u \rangle$, where $G$ is called the default graph and $u\in\mathcal{U}$. An RDF dataset is a set of default and named graphs = $\lbrace G, (u_1,G_1), (u_2,G_2), ...(u_n,G_n)\rbrace$. 
+%
+%\textbf{Data Quality.}
+%%WIQA
+%\subsection{Conceptualization}
+%\label{concepts}
+%\paragraph{Definition of Terminologies.}
+%A generalized architecture of data quality is depicted in Figure. 
+%There exist a number of discrepancies in the definition of many concepts, especially in data quality due to the contextual nature of quality~\cite{Batini:2006} .
+%Therefore, in the sequel we describe and formally define the research context terminology as well as individual components and concepts in more detail.
+%
+%\textbf{RDF Dataset.}
+%%In this document, we understand a data source as an access point for Linked Data in the Web. It provides a dataset and it may support multiple methods of access.
+%
+%The RDF triples, RDF graph and the RDF datasets have been adopted by the W3C Data Access Working Group \cite{Las99,Hayes:2004,Brickley-2004}
+%
+%Given an infinite set $\mathcal{U}$ of URIs (resource identifiers), an infinite set $\mathcal{B}$ of blank nodes, and an infinite set $\mathcal{L}$ of literals, a triple $ \langle s, p, o \rangle \in (\mathcal{U} \cup \mathcal{B})\times \mathcal{U} \times (\mathcal{U} \cup \mathcal{B} \cup \mathcal{L})$ is called an RDF triple; $s$, $p$, $o$ are called, respectively, the subject, the predicate and the object of the triple. An RDF graph $G$ is a set of RDF triples. A named graph is a pair  $\langle G,u \rangle$, where $G$ is called the default graph and $u\in\mathcal{U}$. An RDF dataset is a set of default and named graphs = $\lbrace G, (u_1,G_1), (u_2,G_2), ...(u_n,G_n)\rbrace$. 
+%
+%\textbf{Data Quality.}
+%%WIQA
+%
+%The concept of data quality is a domain-specific subconcept of the general concept of quality. 
+%A popular definition for quality is the "fitness for use"~\cite{qdefn}.
+%Data quality is commonly conceived as a multidimensional construct, as the "fitness for use" may depend on various factors such as accuracy, timeliness, completeness, relevancy, objectivity, believability, understandability, consistency, conciseness, availability, and verifiability~\cite{qconsumers}.
+%In terms of the semantic web, there are varying concepts of data quality.
+%The semantic metadata, for example, is an important concept to be considered when assessing the quality of datasets~\cite{Leigold}.
+%On the other hand, the notion of link quality is another important aspect in Linked Data that is introduced, where it is automatically detected whether a link is useful or not~\cite{Gueret}.
+%Also, it is to be noted that \textit{data} and \textit{information} are interchangeably used in the literature. 
+%
+%\textbf{Data Quality Problems.}
+%%What is data quality problem? How the others have defined it?
+%
+%The data quality problem refers to a set of issues that can affect the potentiality of the applications that use data. 
+%In the literature there is no such a specific definition related to data quality problems. In \cite{Flemming} the author does not provide a definition of it but implicitly explains that in terms of \textit{data diversity}. In \cite{Hogan} the authors discuss about \textit{errors} or \textit{noise} or \textit{difficulties} and in \cite{Hogan:2012} the author discuss about \textit{modelling issues} which are prone of the non exploitations of those data from the applications.
+%
+%Bizer et al. \cite{Bizer} defines the data quality problems as a choice of the web-based information systems design which integrate information from different providers.  In \cite{Mendes} the problem of data quality is related to values being in conflict between different data sources as as a consequence of the diversity of the data. 
+%
+%%because it may be incomplete, poorly formatted, inconsistent,
+%%What kind of problems we could have?
+%%Errors which compromise the effectiveness of applications leveraging the resulting data. 
+%%- Publishing errors; Incomplete; Incoherent; Poorly formatted; Inconsistent; Hijack; Dereferancability; Syntax errors; Link quality; Outdated; Incorrectness; Serialization problems; Inusability; System Problems; Inaccurate; Misleading; Outdated\\
+%
+%%Semantic Metadata
+%%Data sources my have low quality such as misspelling, erroneous statements, etc; problems could be derived from the heterogeneity of data sources such as inconsistencies and duplicated entries; or be introduces by the tools employed. Changes to the data sources or to the underlying ontologies could also bring problems. 
+%%data are modelled in a manner that is not
+%%facilitative to generic consumption
+%
+%\textbf{Data Quality Criteria.}
+%%dimension, criteria
+%%indicators, metric, measures
+%
+%Data quality assessment involves the measurement of quality \textit{dimensions} or \textit{criteria} that are relevant to the consumer.
+%A data quality assessment \textit{metric} or \textit{measure} is a procedure for measuring an information quality dimension~\cite{Bizer}. 
+%These metrics are heuristics that are designed to fit a specific assessment situation~\cite{metric}.
+%Since the criteria are rather abstract concepts, the assessment metrics rely on quality \textit{indicators} that allow for the assessment of the quality of a data source w.r.t the criteria~\cite{Flemming}.
+%An assessment score is computed from these indicators using a scoring function. 
+%
+%The data quality assessment metrics can be classified into three categories according to the type of information that is used as quality indicator: (1) Content Based - information content itself; (2) Context Based - information about the context in which information was claimed; (3) Rating Based - based on the ratings about the data itself or the information provider~\cite{Bizer}. 
+%
+%\textbf{Data Quality Assessment Method.}
+%%WIQA
+%
+%A data quality assessment methodology is defined as the process of evaluation if a piece of data meets in the information consumers need in a specific use case~\cite{Bizer}.
+%The process involves measuring the quality dimensions that are relevant to the user and comparing the assessment results with the users quality requirements.
+%The steps involved in data quality assessment are: (1) formulating a research question; (2) selecting datasets and perf``xorming analyses; (3) detecting quality problems; (4) performing data quality analysis; (5) improving data quality and identifying short comings.
+%%Semantic Metadata
+%%There are three major steps involved in the evaluation procedure, including: setting up the evaluation context, detecting quality problems and calculating and analyzing the quality status. 
+%
+%\begin{figure}
+%\includegraphics[scale=0.5]{Mindmap.pdf}
+%\caption{Conceptualization of the data quality domain.}
+%\label{fig:lod-life-science}
+%\end{figure}
+>>>>>>> .r12025

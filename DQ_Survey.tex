@@ -1,0 +1,147 @@
+% Journal:
+%   Journal of Ambient Intelligence and Smart Environments (JAISE), IOS Press
+%   Web Intelligence and Agent Systems: An International Journal (wias)
+%   Semantic Web: Interoperability, Usability, Applicability (SW)
+% Latex 2e
+% Test file iosart2c.tex
+
+%[seceqn,secfloat,secthm,crcready]
+
+% options: wias, jaise, sw
+\documentclass{iosart2c}
+
+\usepackage[T1]{fontenc}
+\usepackage{times}%
+%\usepackage{natbib}
+%\usepackage[dvips]{hyperref}
+\usepackage{amsmath}
+\usepackage{dcolumn}
+%\usepackage{endnotes}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{supertabular}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{pifont}
+\newcommand{\tick}{\ding{52}}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{widetext}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}
+\usepackage{mathtools}
+\usepackage{rotating}
+\usepackage{footnote}
+
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\firstpage{1} \lastpage{5} \volume{1} \pubyear{2009}
+
+\begin{document}
+\begin{frontmatter}                           % The preamble begins here.
+
+%\pretitle{Pretitle}
+\title{Data Quality Assessment Methodologies for Linked Open Data: A Systematic Review of the Literature}
+
+%\runningtitle{Instructions for the preparation of a camera-ready paper in \LaTeX}
+%\subtitle{Subtitle}
+
+%\review{Name Surname, University, Country}{Name Surname, University, Country}{Name Surname, University, Country}
+
+\author[A]{\fnms{Amrapali} \snm{Zaveri}},
+%\thanks{Both authors contributed equally.}},
+\author[B]{\fnms{Anisa} \snm{Rula}},
+\author[B]{\fnms{Andrea} \snm{Maurino}},
+\author[C]{\fnms{Ricardo} \snm{Pietrobon}} and
+\author[A]{\fnms{Jens} \snm{Lehmann}} and
+\author[A]{\fnms{S\"oren} \snm{Auer}}
+
+\address[A]{Universit\"at Leipzig, Institut f\"ur Informatik, D-04103 Leipzig, Germany,\\
+E-mail: (zaveri, lehmann, auer)@informatik.uni-leipzig.de}
+\address[B]{University of Milano-Bicocca, Department of Computer Science, Systems and Communication (DISCo),\\ Innovative Techonologies for Interaction and Services (Lab), Viale Sarca 336, Milan, Italy\\
+E-mail: (anisa.rula, maurino)@disco.unimib.it}
+{\address[C]{Associate Professor and Vice Chair of Surgery, Duke University, Durham, NC, USA.,\\
+E-mail: rpietro@duke.edu}}
+
+\begin{abstract}
+%200 words
+
+\end{abstract}
+
+\begin{keyword}
+data quality\sep assessment\sep survey \sep Linked Data \sep systematic review 
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+\label{sec:intro}
+\input{introduction}
+
+\section{Survey Methodology}
+\label{sec:method}
+\input{methodology}
+
+%\section{Results}\label{sec:results}
+%\input{results}
+
+\section{Comparison of selected approaches}
+\label{sec:analysis}
+\input{comparativeAnalysis}
+
+%\section{Discussion}\label{sec:disc}
+%\input{discussion}
+
+\section{Conclusions and open issues }
+\label{sec:conc}
+\input{conclusions}
+
+%\begin{figure}[t]
+%\leavevmode\fbox{\parbox[b][30mm][s]{30mm}{
+%\vfill\footnotesize Please include graphics in Encapsulated
+%PostScript (.eps) format\vfill}}
+%\caption{Figure caption.}
+%\end{figure}
+
+%\begin{table*}[htb]
+%\caption{Table caption} \label{t1}
+%\begin{tabular}{ll d{1.3} d{1.3} d{1.3} d{1.3} d{1.3} d{1.3}}
+%\hline
+%Dataset&Models&\multicolumn{1}{l}{$\alpha_1$}&
+%\multicolumn{1}{l}{$\alpha_2$}&
+%\multicolumn{1}{l}{$\alpha_3$}&
+%\multicolumn{1}{l}{$\alpha_4$}&
+%\multicolumn{1}{l}{$\alpha_5$}&
+%\multicolumn{1}{l}{$\alpha_6$}\\
+%\hline
+%CSDS&Linear     &0.164&0.22&0.123&0.3&0.200&0.258\\
+%& Logistic      &0.189&0.155&0.157&0.201&0.154&0.144\\[6pt]
+%KCDS&Linear     &0.155&0.183&0.160&0.218&0.176&0.156\\
+%& Logistic      &0.187&0.125&0.151&0.184&0.187&0.125\\
+%\hline
+%\end{tabular}
+%\end{table*}
+
+\bibliographystyle{acm}
+\bibliography{biblio}
+%\begin{thebibliography}{0}
+
+%\bibitem{1} L. Lamport, \textit{\LaTeX{} User's Guide \& Reference Manual}, Addison Wesley Publishing Co, 1985.
+
+%\bibitem{2} B. Newman and E.T. Liu, Perspective on BRCA1, \textit{Breast Disease} \textbf{10} (1998), 3--10.
+
+%\bibitem{3} D.F. Pilkey, \textit{Happy conservation laws}, in: Neural Stresses, J. Frost, ed., Controlled Press, Georgia, 1995, pp. 332--391.
+
+%\bibitem{4} E. Wilson, \textit{Active vibration analysis of thin-walled beams}, Ph.D. Dissertation, University of Virginia, 1991.
+
+%\end{thebibliography}
+
+\end{document}

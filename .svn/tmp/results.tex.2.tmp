@@ -1,0 +1,158 @@
+\subsection{General Overview}
+- Distinction between methodologies used in Linked Data and Database communities based on Open and Closed World Assumption
+
+\subsection{Conceptualization}
+\paragraph{Definition of Terminologies.}
+A generalized architecture of data quality is depicted in Figure. 
+There exist a number of discrepancies in the definition of many concepts, especially in data quality due to the contextual nature of quality~\cite{Batini:2006} .
+Therefore, in the sequel we describe and attempt to define the research context terminology as well as individual components and concepts in more detail.
+
+\textbf{Dataset.}
+The RDF triples, RDF graph and the RDF datasets have been adopted by the W3C Data Access Working Group \cite{Las99,Hayes:2004,Brickley-2004}
+
+Given an infinite set $\mathcal{U}$ of URIs (resource identifiers), an infinite set $\mathcal{B}$ of blank nodes, and an infinite set $\mathcal{L}$ of literals, a triple $ \langle s, p, o \rangle \in (\mathcal{U} \cup \mathcal{B})\times \mathcal{U} \times (\mathcal{U} \cup \mathcal{B} \cup \mathcal{L})$ is called an RDF triple; $s$, $p$, $o$ are called, respectively, the subject, the predicate and the object of the triple. An RDF graph $G$ is a set of RDF triples. A named graph is a pair  $\langle G,u \rangle$, where $G$ is called the default graph and $u\in\mathcal{U}$. An RDF dataset is a set of default and named graphs = $\lbrace G, (u_1,G_1), (u_2,G_2), ...(u_n,G_n)\rbrace$. 
+
+\textbf{Data Quality.}
+%WIQA
+The concept of information quality is a domain-specific subconcept of the general concept of quality. 
+A popular definition for quality is the "fitness for use"~\cite{qdefn}.
+Information quality is commonly conceived as a multidimensional construct, as the "fitness for use" may depend on various factors such as accuracy, timeliness, completeness, relevancy, objectivity, believability, understandability, consistency, conciseness, availability, and verifiability~\cite{qconsumers}.
+In terms of the semantic web, there are varying concepts of data quality.
+The semantic metadata, for example, is an important concept to be considered when assessing the quality of datasets~\cite{Leigold}.
+On the other hand, the notion of link quality is another important aspect in Linked Data that is introduced, where it is automatically detected whether a link is useful or not~\cite{Gueret}.
+
+\textbf{Data Quality Problems.}
+%Pedantic Web
+Errors which compromise the effectiveness of applications leveraging the resulting data. 
+- Publishing errors; Incomplete; Incoherent; Poorly formatted; Inconsistent; Hijack; Dereferancability; Syntax errors; Link quality; Outdated; Incorrectness; Serialization problems; Inusability; System Problems; Inaccurate; Misleading; Outdated\\
+%Semantic Metadata
+Data sources my have low quality such as misspelling, erroneous statements, etc; problems could be derived fdrom the heterogeneity of data sources such as inconsistencies and duplicated entries; or be introduces by the tools employed. Changes to the data sources or to the underlying ontologies could also bring problems. 
+
+\textbf{Data Quality Criteria.}
+%WIQA
+Indicators, Dimensions, Policies
+An information quality assessment metric is a procedure for measuring an information quality dimension. Assessment metrics rely on quality indicators and calculate an assessment score from these indicators using a scoring function. 
+Assessment metrics are heuristics that are designed to fit a specific assessment situation
+
+- Context based
+- Content based
+- Rating based
+
+%Anika's work
+The criteria are rather abstract concepts. The indicators constitute measurable aspects of a criterion and, thus, allow for the assessment of the quality of a data source w.r.t the criteria. 
+
+%Semantic Metadata
+Three rules apply to the relations between the reference elements and semantic metadata, which give a definition for high quality semantic metadata. These rules provide high level guidelines for assessing semantic metadata. 
+
+\textbf{Data Quality Assessment Methods.}
+%WIQA
+Information quality assessment is the process of evaluating if a piece of information meets the information consumers needs in a specific situation. 
+Information quality assessment involves measuring the quality dimensions that are relevant to the information consumer and comparing the assessment results with the information consumers quality requirements.
+
+%Semantic Metadata
+There are three major steps involved in the evaluation procedure, including: setting up the evaluation context, detecting quality problems and calculating and analyzing the quality status. 
+
+\begin{figure*}
+\includegraphics[width=6.5in]{Mindmap.pdf}
+\caption{Conceptualization of the data quality domain.}
+\label{fig:lod-life-science}
+\end{figure*}
+
+\subsection{Quantitative Review}
+
+Out of the total number of articles retrieved from the initial literature survey, most were only related to the general aspects of data quality assessment of the data available on the Web. After refining our search strategy by using a combination of keywords and the advanced search forms available for most of the online databases, we retrieved (no.?) of articles. After reading through the articles in detail, only 9 were identified to be specifically those reporting a methodology or framework for data quality assessment of Linked Data.
+
+%Out of the 9 articles, (no.) are from the year (?), (conference/journal).
+
+Additionally, those articles related to provenance quality assessment, were also retrieved. A total number of (48?) articles were identified. 
+
+\subsection{Qualtitative Review}
+
+\begin{table*}
+\centering  
+\caption{Qualitative evaluation of the methodologies} \label{t2}
+\resizebox{14cm}{!} {
+\begin{tabular}{| p{1.5cm} | p{1.5cm} | p{2cm} | p{3.5cm} | p{3.5cm} | p{2.75cm}| }
+\hline
+\textbf{Article} & \textbf{Type of data} & \textbf{Problem(s) addressed} & \textbf{Quality criteria assessed} & \textbf{Assessing quality results} & \textbf{Tool} \\
+%\hline
+%Steingberg et.al., 2010 & Web resources & User interaction and rewarding; RDF links & 2 criteria & questionnaires: rank and rate, edit, create; semantic annotation: annotate, add, interlink & No \\
+\hline
+Lei et.al., 2007 & Semantic metadata & 
+\vspace{-0.4cm}\begin{itemize} \item Incomplete annotation \item Duplicate annotation, \item Ambiguous annotation, \item Inaccurate annotation \begin{itemize} \item Innacurate labeling, \item Innaccurate classification \end{itemize} \item Spurious annotation \end{itemize}& Semantic metadata should precisely capture the meaning of data sources& binary way: simple ratio.
+normalized range: BDM, the height of MSCA, the distance from the GS to the MSCA. & No \\
+&& \vspace{-0.4cm}\begin{itemize} \item duplicate representation \item spurious representation \item time-inaccurate representation \end{itemize} &Semantic metadata should always represent the status of the real world &&\\
+&& inconsistent representation & Semantic metadata should always conform to the underlying ontologies &&\\
+\hline
+Lei et.al., 2007 & Semantic metadata (semantic annotation) & \vspace{-0.4cm}\begin{itemize} \item Inconsistent annotation, \item Duplicate annotation, \item Ambiguous annotation, \item Inaccurate annotation, \item Spurious annotation \end{itemize}& Evaluation based on Domain Knowledge and Background Knowledge & binary way: simple ratio.
+normalized range: BDM, the height of MSCA, the distance from the GS to the MSCA. & No \\
+\hline
+Hogan et.al., 2010 & RDF data & Errors in publishing RDF data & \vspace{-0.4cm} \begin{itemize} \item incomplete  \item incoherent \item hijack \item inconsistent \end{itemize} & seven-hop breadth-first crawl over RDF/XML documents and analyzing the retrieved URIs to find errors & Yes,  \newline \url{http://www.w3.org/RDF/Validator/} and \url{http://www.w3.org/RDF/Validator/uri} \\
+\hline
+Gu\`eret, 2011 & Linked data & Link quality & \vspace{-0.4cm} \begin{itemize} \item degree \item clustering coefficient \item number of open owl:sameAs chains in the local network, centrality \item measure of the richness of a resource description \end{itemize} & results from both analyses, before and after addition of new edges are compared to ideal distributions for the different metrics & Yes,  \newline \url{https://github.com/cgueret/LinkedData-QA, http://qa.linkeddata.org/frontend/} \\
+\hline
+B\"ohm et.al., 2010 & Linked data & Setting up the evaluation context & \vspace{-0.4cm} \begin{itemize} \item domain level : clustering, labeling \item  schema level : matching, disambiguation  \item data level : data type detection, pattern detection, value distribution \end{itemize} & - facts and statistics about a cluster in detail, which can be used to perform schema discovery
+- additional filtering through cluster modification & Yes,  \newline \url{https://www.hpi.uni-potsdam.de/naumann/sites/lodprof/ProLOD/ProLOD.html} \\
+\hline
+Bizer et.al.,2009 & Web-based information systems & WIQA-PL policy language; Named Gaphs & \vspace{-0.4cm} \begin{itemize} \item content-based \item context-based \item rating-based \end{itemize} & Explaining assessment results & Yes,  \newline \url{http://www4.wiwiss.fu-berlin.de/bizer/wiqa/} \\
+\hline
+Mostafavi et.al., 2004 & Spatial databases & logical consistency of a spatial database: ontological level, data level & \vspace{-0.4cm} \begin{itemize} \item logical consistency of the database: \vspace{-0.2cm}  \begin{itemize} \item geometric constraints \item semantic constraints \end{itemize} \end{itemize} &  & No \\
+\hline
+Chen et.al., 2010 & Semantic networks (graphs) & Building semantic network; hypothesis generation; association rules generation & \vspace{-0.4cm} \begin{itemize} \item appropriate \item semantically coherent \end{itemize} & analyze based on two metrics: Qsize and Qattribute & No \\
+\hline
+Mendes et.al.,2012 & Linked Data & XML document for defining the metrics based on LDIF provenance metadata & \vspace{-0.4cm} \begin{itemize} \item recent \item  reputabled \end{itemize} & evaluation:formula TimeCloseness,Preference & Yes, \newline \url{http://www4.wiwiss.fu-berlin.de/bizer/sieve/} \\
+\hline
+Hogan et.al.,2012 & Linked Data&\vspace{-0.4cm}\begin{itemize}\item naming resources:avoid blank nodes, use HTTP URIs, mint dereferenceable URIs, keep URIs short, host stable URIs  \item linking to external data providers: use external URIs, provide OWL sameAs link \item describing resources: avoid prolix RDF features,cherry-pick vocabularies \item dereferenced representations: give human readable metadata, dereference forward links, dereference back-links, describe and licence documents \end{itemize} & conformance to the given guidelines & straight forward metrics (quantify the level of conformance)& No\\
+\hline
+\end{tabular}
+}
+\end{table*}
+%http://goo.gl/s2wq1
+
+%\hline
+%Flemming et.al., 2010 & Linked Data source & [definition of and entity to be a member of disjoint classess, improper use of inverse-functional properties, redefine the vocabulary, interoperability issues (lacking usage of homogeneous datatypes).],[outdated data might meanwhile become invalid, problem of data integration, assuring that a source does not include outdated data, dereferenceability of all internal and external URIs, the inclusion of recent data],[the statement of basic provenance information assure the trust, use dedicated vocabularies for provenance, a source claims responsibility for the data it provides],[the non usage of an established format, the lacking of indication of the content-type as specifically as possible, the missing usage of established vocabularies, visibility of the dataset if does not consider references of established vocabularies],[dealing with alternative representations of the data such as conversion of teh data into various formats, providing the data in different languages, enable content negotation, incorrect interpretation of the accept-headers sent],[missing of human-readable labelling and description of the defined classes, properties and entities, missing metadata about the dataset, the operability of HTML documents, for exploring the dataset some exemplary SPARQL queries are helpful, presence of services like message boards and mailing lists improve the applications] & begin{itemize} \item Consistency, \item Timeliness, \item Verifiability, \item Uniformity, \item Versatility, \item Comprehensibility, \item Validity of documents, \item Amount of data, \item Licencing, \item Accessibility and \item Performance \end{itemize}& normalized range: valuation method & Yes,  \newline \url{http://linkeddata.informatik.hu-berlin.de/LDSrcAss/} \\
+
+\subsection{Evaluation of frameworks}
+- Select few frameworks/methodologies that can be applied to datasets to evaluate their performance 
+- Evaluate frameworks according to
+
+\begin{table*}[!H]
+\caption{Evaluate of frameworks according to specific attributes} \label{t3}
+\begin{tabular}{| l | l | l | l | }
+\hline
+\textbf{Attribute} & \textbf{DQ Evaluator} & \textbf{Sieve} & \textbf{Reason}\\
+\hline
+Usability & 1 & 0.1 &\\
+\hline
+Customizability & 0.9 & 0.5 &\\
+\hline
+Genericity & 1 &  &\\
+\hline
+Collaboration & NA &  &\\
+\hline
+Portability & 1 & 0.5  &\\
+\hline
+Accessibility & NA & NA  &\\
+\hline
+Proactivity & NA & NA  &\\
+\hline
+Automation & 0.9 & 0.1  &\\
+\hline
+Evolvability & NA & NA  &\\
+\hline
+Interoperability & 0.5 &  &\\
+\hline
+Scalability & 0.1 &  &\\
+\hline
+\end{tabular}
+\end{table*}
+
+\subsection{Validator Tools}
+\begin{itemize}
+\item http://stats.lod2.eu/
+\item http://www.w3.org/RDF/Validator/
+\item http://validator.linkeddata.org/vapour
+\end{itemize}
+
+
+%Spider Chart: http://goo.gl/rNqgD

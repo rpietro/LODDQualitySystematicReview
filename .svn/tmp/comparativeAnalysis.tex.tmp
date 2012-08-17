@@ -1,0 +1,438 @@
+\subsection{Dimensions}
+The definition of the \emph{dimensions, and metrics} to assess data quality is a critical activity. 
+In general, multiple metrics can be associated with each quality dimension. 
+In some cases, the metric is unique and the theoretical definition of a dimension coincides with the operational definition of the corresponding metric.
+The linked open data paradigm is the fusion of three different research areas namely \emph{semantic web} (for the capability to generate semantic connections among data),  \emph{world wide web} (related to the availability and open access to such data) and \emph{data management} (owing to the fact that there is the need to mange large set of heterogeneous and distributed data), selected approaches use quality dimension taken from any of theses specific areas. 
+Thus, for example, in the data management area the literature provides a thorough classification of data quality dimensions.  
+The six most important classifications of quality
+dimensions are provided by Wand et al. \cite{Wand:1996}; Wang et al. \cite{Wang:1996}; Redman \cite{Redman:1997}; Jarke et al. \cite{Jarke:2010}; Bovee et al. \cite{Bovee:2003}; and Naumann \cite{Naumann:2002}.  
+By analyzing these classifications, it is possible to define a basic set of data quality dimensions, including accuracy, completeness, consistency and timeliness, which constitute the focus of the majority of authors [Catarci et al. \cite{scannapieco:2002}.
+However, no general agreement exists either on which set of dimensions defines the quality of data, or on the exact meaning of each dimension and the same problem also occurs in LOD.
+
+As mentioned in Section~\ref{concepts}, data quality assessment involves the measurement of quality dimensions that are relevant to the consumer.
+An initial list of data quality dimensions was first obtained from~\cite{Bizerthesis}.
+Thereafter, each approach was analyzed to extract the problem it was tackling and thus mapping it to one or more of the quality dimensions.
+For example, the dereferencability issues, problem of no structured data available and misreported content mentioned in~\cite{Hogan:2012} were mapped to the dimension of Completeness as well as Availability.
+However, not all the problems could be mapped to the initial set of dimensions such as the problem of incoherency or interlinking between datasets or the problem of the alternative representations of the data and its handling i.e. the versatility of the dataset.
+As a result , we obtained a further set of quality dimensions, which were particularly relevant for Linked Data.
+Table~\ref{dimensions} shows the complete list of the 25 identified Linked Data quality dimensions along with frequency and occurrence of each dimension in the included approaches.
+
+As can be seen in the table, there are three visible groups of approaches: (a) a set of approaches that focus only on the provenance of the datasets~\cite{Hartig2008}, \cite{Gamble2011}, \cite{Shekarpour2010}, \cite{Golbeck2006}, \cite{Gil2002}, \cite{Golbeck2003}, \cite{Gil2007}, \cite{Jacobi2011}, \cite{Bonatti2011}, \cite{Maurino2012}; (b) a set of approaches which use majority of the dimensions (more than 5) \cite{Bizer},  \cite{Flemming}, \cite{Hogan:2012}, \cite{Mendes} and (c) a set of approaches which focus on very few and specific dimensions  \cite{Bohm}, \cite{Chen}, \cite{Gueret}, \cite{Hogan}, \cite{Lei}, \cite{Mostafavi}.
+Additionally it can be observed that Provenance, Consistency, Timeliness, Accuracy and Completeness are the focus of majority of the approaches.
+
+\onecolumn
+\begin{landscape}
+\begin{longtable}{ | p{3.5cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | p{0.3cm} | }
+\caption{Consideration of data quality dimensions in each of the included approaches.}
+\label{dimensions} \\
+\hline
+Approaches / Dimensions & \begin{sideways}Provenance\end{sideways} & \begin{sideways}Consistency\end{sideways} & \begin{sideways}Timeliness\end{sideways} & \begin{sideways}Accuracy\end{sideways} &  \begin{sideways}Completeness\end{sideways} &  \begin{sideways}Amount of Data\end{sideways} &  \begin{sideways}Availability\end{sideways} &  \begin{sideways}Understandability\end{sideways} & \begin{sideways}Relevancy\end{sideways} &  \begin{sideways}Reputation\end{sideways} &  \begin{sideways}Verifiability\end{sideways} &  \begin{sideways}Interpretability\end{sideways} &  \begin{sideways}Rep. Conciseness\end{sideways} &  \begin{sideways}Rep. Consistency\end{sideways} &  \begin{sideways}Licencing\end{sideways} &  \begin{sideways}Performance\end{sideways} &  \begin{sideways}Objectivity\end{sideways} &  \begin{sideways}Believability\end{sideways} &  \begin{sideways}Response Time\end{sideways} &  \begin{sideways}Security\end{sideways} &  \begin{sideways}Uniformity\end{sideways} &  \begin{sideways}Versatility\end{sideways} &  \begin{sideways}Validity of documents\end{sideways} &  \begin{sideways}Conciseness\end{sideways} &  \begin{sideways}Coherence\end{sideways}\\
+\hline 
+Bizer et.al.,2009 &  & X & X & X & X & X & X & X & X & X & X & X & X & X &  &  & X & X & X & X &  &  &  &  & \\ 
+\hline
+B\"ohm et.al.,2010 &  & X &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Chen et.al.,2010  &  & X &  &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Flemming et.al.,2010 &  & X & X &  &  & X & X & X &  &  & X &  &  &  & X & X &  &  &  &  & X & X & X &  & \\ 
+\hline
+Gu\'eret et. al,2011 &  &  &  & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & X\\ 
+\hline
+Hogan et.al.,2010 &  & X &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Hogan et.al.,2012 &  &  &  &  &  &  & X &  & X &  &  & X & X & X & X & X &  &  &  &  &  &  &  &  & \\ 
+\hline
+Lei et.al.,2007 &  & X & X & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Mendes et.al., 2012 &  & X & X &  & X &  &  &  &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  & X & \\ 
+\hline
+Mostafavi et.al., 2004 &  & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Hartig,2008 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Gamble et.al., 2011 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Shekarpour et.al., 2008 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Golbeck et.al., 2006 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Gil et.al., 2002 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Golbeck et. al., 2003 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Gil et.al., 2007 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Jacobi et.al., 2011 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Bonatti et. al., 2012 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\ 
+\hline
+Maurino et.al., 2012 & X &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+\end{longtable}
+\end{landscape}
+\twocolumn
+
+\subsection{Metrics}
+Metrics: related to the measurements of each work provided to assess the quality in LOD.
+In general, multiple metrics can be associated with each quality dimension.
+\textit{ In some cases, the metric is unique and the theoretical definition of a dimension coincides with the operational definition of the corresponding metric. 
+For this reason, in the following we make a distinction between theoretical and operational definitions of dimensions only when the literature provides multiple metrics.}
+Table~\ref{metrics} provides a list of the data quality metrics for each of the dimension and classifies it as being either subjective or objective.
+
+%Provenance
+In \cite{Hartig2008} the authors determine the measurement of trustworthiness of RDF statements as a value of trust which is either unknown or a value in the interval [-1,1]. Actually, they do not prescribe and implementation of how to assign a trust value to the statements but they provide a data provenance model which include information about publisher of the dataset, creation method and creation time of the dataset, and publisher and publication time of possible original sources. Therefore, these provenance information can be exploited to assess other dimensions such as timeliness or accuracy which in turn can be merged to provide a unified value of provenance.
+In \cite{Gamble2011} the authors suggest to have a trusted third party to provide information such as citation count of a publication or global reputation. Even in this case, the meta information should be provided in advance and the trustworthiness is measured by the reputation dimensions.
+In \cite{Shekarpour2010} the author propose a statistical approach to measure a trust propagation rating between two nodes. 
+In \cite{Golbeck2006} the authors infer the trust path from a node A to a node C based on previous trust values given from the path AB and BC. However, a pre established value of trust is needed. 
+In \cite{Gil2002} the authors do not address how the trust value is derived. Even in this case trustworthiness is calculated possibly as a combination of its popularity, reputation,
+and authority. 
+\onecolumn
+%\begin{table*}[htb]
+\begin{longtable}{ | p{3cm} | p{10cm} | >{\centering\arraybackslash}p{2cm}| }
+\caption{Comprehensive list of data quality metrics and the type - subjective or objective}
+\label{metrics} \\
+\hline
+\textbf{Dimension} & \textbf{Metric} & \textbf{Type of metric ("S"ubjective/ "O"bjective)} \\
+\hline
+\multirow{5}{*}{Accuracy} & spurious annotation/representation & O \\
+& inaccurate annotation & O \\
+& inacurrate labeling and classification & O \\
+& detecting poor attributes & O \\
+& accuracy of interlinking between datasets & O \\
+\hline
+\multirow{9}{*}{Consistency} & no definitions of entities as being members of disjoint classes & \\
+& valid usage of inverse-functional properties & \\
+& no redefinition of existing properties & \\
+& usage of homogeneous datatypes & \\
+& no stating of inconsistent values for properties & \\
+& annotation & \\
+& reasoning: noise and inconsistency & \\
+& misuse of predicates & \\
+& inconsistencies in ontologies & \\
+\hline
+Objectivitiy & no bias or opinion expressed when a data provider interprets or analyses facts & \\
+\hline
+\multirow{4}{*}{Timeliness} & stating the most recent validation of the data & \\
+& no inclusion of outdated data & \\
+& inclusion of recent data & \\
+& dereferencability of all internal and external URIs & \\
+\hline
+\multirow{2}{*}{Believability} & meta-information about the identify of information provider & \\
+& checking source from which information is retrieved & \\
+\hline
+\multirow{6}{*}{Completeness} & schema completeness & \\
+& column completeness & \\
+& population completeness & \\
+& URI/HTTP: accessibility and dereferencability & \\
+& linking & \\
+\hline
+\multirow{10}{*}{Understandibility} & human-readable labelling of classes, properties and entities by providing rdfs:label & \\
+& human-readable description of classes, properties and entities by providing an rdfs:comment & \\
+& indication of metadata about a dataset & \\
+& indication of one or more exemplary URIs & \\
+& indication of a regular expression that matches the URIs of a dataset & \\
+& indication of an exemplary SPARQL query & \\
+& indication of some of the vocabularies used & \\
+& operability of HTML documents & \\
+& provision of message boards and mailing lists & \\
+& meta information about the language of web content & \\
+\hline
+\multirow{5}{*}{Relevancy} & using meta-information attributes & \\
+& count occurrence of relevant terms within these attributes & \\
+& looking for licensing meta-information like Creative Commons labels & \\
+& sort documents according to their relevancy for a given query & \\
+& existence of links to external data providers: use external URIs, provide owl:sameAs link & \\
+\hline
+\multirow{4}{*}{Verifiability} & stating basic provenance information & \\
+& usage of a dedicated provenance vocabulary & \\
+& usage of digital signatures & \\
+& traceability and provability & \\
+\hline
+\multirow{4}{*}{Amount of data} & no. of triples in a dataset & \\
+& no. of internal and external links & \\
+& scope and level of detail - coverage & \\
+& whether the amount of collected data is appropriate & \\
+\hline
+\multirow{5}{*}{Interpretability} & use of appropriate language, symbols, unites and clear definitions & \\
+& use of self-descriptive formats, identifying objects and terms used to define the objects with globally unique identifiers & \\
+& use of various schema languages to provide definitions for terms & \\
+& naming resources - avoiding blank nodes & \\
+& dereferenced representations - giving human readable metadata & \\
+\hline
+Rep. Conciseness & information is compactly represented - keep URIs short & \\
+\hline
+\multirow{3}{*}{Rep. Consistency} & re-use existing terms & \\
+& cherry pick vocabularies & \\
+& provision of data in different representational formats & \\
+\hline
+\multirow{11}{*}{Availability} & accessibiliy of the server & \\
+& dereferenceable URIs & \\
+& host of stable URIs & \\
+& URIs don't contain variable information & \\
+& homogeneous (lower) case of URIs & \\
+& redirection using the status code 303 See Other & \\
+& accessibility of the SPARQL endpoint & \\
+& accessibility of the RDF dumps & \\
+& URI/HTTP: accessibility and derefencability & \\
+& accessibility of the RDF dumps  & \\
+& dereferenced representations:Ê
+- dereference forward links
+- dereference back-links & \\
+\hline
+Response time & delay between submission of a request by the user and reception of the response from the system & \\
+\hline
+Security & & \\
+\hline
+\multirow{4}{*}{Uniformity} & usage of an established format & \\
+& stating the content-types as specifically as possiblet & \\
+& usage of established vocabulariest & \\
+& referencing of established URIst  & \\
+\hline
+\multirow{6}{*}{Versatility} & provision of the data in various formats & \\
+& provision of the data in various languages & \\
+& application of content negotiation & \\
+& correct interpretation of the accept-headers sent & \\
+& human-readable indication of a SPARQL-endpoint & \\
+& machine-readable indication of a SPARQL-endpoint & \\
+\hline
+\multirow{4}{*}{Validity of documents} & no syntax errors & \\
+& exclusive usage of defined classes and properties & \\
+& no usage of deprecated classes and properties & \\
+& usage of proper datatypes & \\
+\hline
+\multirow{7}{*}{Licensing} & machine-readable indication of a licence & \\
+& human-readable indication of a licence & \\
+& permitted reproduction of data & \\
+& permitted distribution of data & \\
+& permitted modification and redistribution of data & \\
+& no attribution needed & \\
+& no Copyleft / Share Alike needed & \\
+\hline
+\multirow{8}{*}{Performance} & machine-readable indication of one or more RDF dumps & \\
+& human-readable indication of one or more RDF dumps & \\
+& usage of Slash-URIs when providing a large amout of data & \\
+& low latency & \\
+& high throughput & \\
+& only minor variations of the performance & \\
+& maintenance of the performance no matter the load & \\
+& avoid prolix RDF features & \\
+\hline
+\multirow{2}{*}{Conciseness} & schema level : intensional conciseness - does not contain redundant attributes & \\
+& data level : extensional conciseness - does not contain redundant objects & \\
+\hline
+\multirow{6}{*}{Provenance} & using annotations about trust and provenance of those statements & \\
+& provenance information and opinion of other information consumers & O\\
+& elements of provenance information, impact values and a function to calculate the provenance & S\\
+& construction of decision networks informed by provenance graphs & S\\
+& statistical techniques and and a weighting mechanism that utilizes fuzzy logic for modeling & S\\
+& use of annotations by many individuals & O\\
+\hline
+%\end{tabular}
+%\end{table*}
+\end{longtable}
+\twocolumn
+
+\subsection{Type of data}
+The ultimate goal of an assessment activity is the analysis of data that, in general, describes real world objects in a format that can be stored, retrieved, and processed by a software procedure, and communicated through a network. 
+In LOD, most authors either implicitly or explicitly distinguish three types of data:
+\begin{itemize}
+\item RDF triple. Given an infinite set $\mathcal{U}$ of URIs (resource identifiers), an infinite set $\mathcal{B}$ of blank nodes, and an infinite set $\mathcal{L}$ of literals, a triple $ \langle s, p, o \rangle \in (\mathcal{U} \cup \mathcal{B})\times \mathcal{U} \times (\mathcal{U} \cup \mathcal{B} \cup \mathcal{L})$ is called an RDF triple; $s$, $p$, $o$ are called, respectively, the subject, the predicate and the object of the triple.
+\item Graph. An RDF graph $G$ is a set of RDF triples. A named graph is a pair  $\langle G,u \rangle$, where $G$ is called the default graph and $u\in\mathcal{U}$. [ANDREA we need to underline that a graph is a set of datasource provided by different providers]
+\item Dataset. An RDF dataset is a set of default and named graphs = $\lbrace G, (u_1,G_1), (u_2,G_2), ...(u_n,G_n)\rbrace$.
+\end{itemize}
+%Table~\ref{appfield}
+
+\subsection{Level of automatization}
+%mention that it refers to the involvement of the user, also mention how much knowledge a user requires to use the tool
+A set of software tools are needed to support the assessment phase. 
+Such tools implement the methodologies and metrics defined in the above described steps. 
+Due to the nature of the quality dimensions and related metrics it is possible that some activities are fully or semi automatic or manually realized.
+Table~\ref{appfield} shows the level of automatisation for each of the identified tools.
+
+\onecolumn
+\begin{landscape}
+\begin{table*}
+\caption{Qualitative evaluation of frameworks} \label{appfield}
+\begin{tabular}{ p{2.3cm} c p{7cm}  c  p{0.9cm} l p{1cm} l p{0.7cm} l cp{0.5cm} }
+\hline
+\textbf{Paper} & {\textbf{Application}} & \textbf{Goal} & \multicolumn{4}{c}{\textbf{Type of data}} & \multicolumn{3}{c}{\textbf{Degree of automation}} & \textbf{Tool support} \\
+%\cline{2-4}
+\hline
+ & \textbf{G}eneral/\textbf{S}pecific &  & \textbf{Triple} & \textbf{Resource} & \textbf{Several resources} & \textbf{Entire LOD Cloud} & \textbf{Manual} & \textbf{Semi-automated} & \textbf{Automated} & \\
+\hline
+Gil et.al., 2002 & G & Approach to derive an assessment of a data source
+based on the annotations of many individuals & \tick & \tick & - & - & - & \tick & - & \tick \\
+\hline
+Golbeck et.al., 2003 & G & Trust networks on the semantic web & - & \tick & - & - & - & - & - & - \\
+\hline
+Mostafavi et.al., 2004 & S & Spatial data integration & \tick & \tick & - & - & - & - & - & - \\
+\hline
+Golbeck, 2006 & G & Algorithm for computing personalized trust recommendations using the provenance of existing trust annotations in social networks & - & - & \tick & \tick & - & - & - & - \\
+\hline
+Gil et.al., 2007 & S & Trust assessment of web resources & - & \tick & - & - & - & - & - & - \\
+\hline
+Lei et.al., 2007 & S & Assessment of semantic metadata & \tick & \tick & - & - & - & - & - & - \\
+\hline
+Hartig, 2008 & G & Trustworthiness of Data on the Web & \tick & - & - & - & - & \tick & - & \tick \\
+\hline
+Bizer et.al., 2009 & G  & Information filtering & \tick & \tick & \tick & -  & \tick &  - & - & \tick \\
+\hline
+B\"ohm et.al., 2010 & G  & Data integration & \tick & \tick & - & - &  & \tick & -  & \tick \\
+\hline
+Chen et.al., 2010  & G  & Generating semantically valid hypothesis & \tick & \tick & - & - & - & - & - & - \\
+\hline
+Flemming et.al., 2010 & G  & Assessment of published data & \tick & \tick & - & - & - & \tick & - & \tick \\
+\hline
+Hogan et.al., 2010 & G &Assessment of published data by identifying RDF publishing errors and providing approaches for improvement & \tick & \tick & \tick &\tick & - & \tick & - & \tick \\
+\hline
+Shekarpour et.al., 2010 & G & Method for evaluating trust & - & - & \tick & \tick & - & - & - & - \\
+\hline
+Gamble et.al., 2011 & G & Application of decision networks to quality, trust
+and utility assessment & - & - & \tick & \tick & - & - & - & - \\
+\hline
+Jacobi et.al., 2011 &  G & Trust assessment of web resources & - & \tick & - & - & - & - & - & - \\
+\hline
+Bonatti et.al., 2011 &  G & Provenance assessment for reasoning & \tick & \tick & - & - & - & - & - & - \\
+\hline
+Gu\'eret et.al., 2012 & S & Assessment of quality of links & - & - & - & \tick & - & - & \tick & \tick \\
+\hline
+Hogan et.al., 2012 & G & Assessment of published data & \tick & \tick & \tick &\tick & - & - & - & - \\
+\hline
+Maurino et.al., 2012 & G & Assessment of time related quality dimensions & \tick & \tick & \tick & - & - & - & - & - \\
+\hline
+Mendes et.al., 2012 & S & Data integration & \tick & - & - & - & \tick & - & - & \tick \\
+\hline
+\end{tabular}
+\end{table*}
+\end{landscape}
+\twocolumn
+
+\subsection{Summary and comparison of selected approaches}
+
+\subsection{Comparison of tools}
+
+In this section, we analyze three particular tools, namely, Flemmings Data Quality Assessment Tool, Sieve and LODGRefine to assess their usability for data quality assessment. 
+In particular, we compare them in terms of ease of usability, level of user interaction and discussed their pros and cons.
+%describe, user involvement, screenshot
+\paragraph{Flemmings Data Quality Assessment Tool.}
+The data quality assessment tool proposed in~\cite{Flemming}, is a simple user interface~\footnote{available only in German at \url{http://linkeddata.informatik.hu-berlin.de/LDSrcAss/datenquelle.php}}, where a user first needs to specify the name, URI and three entities of a particular data source. 
+Then, the user is given the option of assigning weights to each of the pre-defined data quality metrics. 
+There are two choices for assigning the weights: (a) assigning a weight of 1 to all the metrics or (b) choosing the pre-defined exemplary weight of the metrics defined for a data source.
+% from the view of a semantic search engine consisting of a crawler, validator, derived statements and indexers. 
+
+In the next step, the user is asked to answer a series of questions regarding the datasets, which are important indicators of the data quality of Linked Open Datasets and those which cannot be quantified. 
+For example, questions such as the use of stable URIs, the number of obsolete classes and properties and whether the datasets provides a mailing list. 
+In the next step, the user is presented with the list of dimensions and metrics and is allowed to specify yet again a set of weightings for each of them.
+This step is important especially for those indicators for which no formalization of the quantification exists (indicated against each of the metric). 
+Also, those metrics which are assigned a weight of 0 are are not included in the final assessment.
+Each metric is provided with 2 input fields: first showing the assigned weights and second showing the calculated value. 
+At the end, the user is presented with a score, out of 100, based on the answers of all the questions, which is the data quality score.
+Additionally, the rating of each dimension and the total weight (out of 11 on account of 11 dimensions used in the assessment) is presented based on the user input from the previous step. 
+Figure~\ref{fig:flemmingtool} shows an excerpt of the tool showing the result of assessing the quality of DBpedia with a score of 64 out of 100. 
+
+\begin{figure}[htb]
+\includegraphics[width=3.5in]{Flemmingtool.pdf}
+\caption{Excerpt of the Flemmings Data Quality Assessment tool showing the result of assessing the quality of DBpedia with a score of 64 out of 100.}
+\label{fig:flemmingtool}
+\end{figure}
+
+On the one hand, the tool is easy to use with the form-based questions and adequate explanation for each step. 
+Also, the assigning of the weights for each metric and the calculation of the score is straightforward and easy to adjust for each of the metrics. 
+However, on the other hand, this tool has a few drawbacks: (1) the user needs to have adequate knowledge about the dataset in order to correctly assign weights for each of the metrics; (2) it does not drill down to the root cause of the proposed data quality problem and (3) some of the main quality dimensions are missing from the analysis such as accuracy, completeness, provenance, consistency, conciseness and relevancy as some could not be quantified and were not perceived to be true quality indicators. 
+
+\paragraph{Sieve}
+
+\paragraph{LODGRefine}
+
+
+\section{Proposed Linked Data quality assessment steps}
+% Which papers follow which steps
+% Introduce the tools mentioned in Step 4
+A data quality assessment methodology is defined as the process of evaluation if a piece of data meets in the information consumers need in a specific use case~\cite{Bizer}.
+The process involves measuring the quality dimensions that are relevant to the user and comparing the assessment results with the users quality requirements.
+
+The steps of the assessment phase are:
+\begin{itemize}
+\item data analysis, which examines data schemas and performs interviews to reach a
+complete understanding of data and related architectural and management rules;
+\item DQ requirements analysis, which surveys the opinion of data users and administrators
+to identify quality issues and set new quality targets;
+\item identification of critical areas, which selects the most relevant databases and data
+flows to be assessed quantitatively;
+\item process modeling, which provides a model of the processes producing or updating
+data;
+\item measurement of quality, which selects the quality dimensions affected by the quality
+issues identified in the DQ requirements analysis step and defines corresponding
+metrics; measurement can be objective when it is based on quantitative metrics, or
+subjective, when it is based on qualitative evaluations by data administrators and
+users.
+\end{itemize}
+Note that in all the steps of the assessment phase, a relevant role is played by metadata
+that store complementary information on data for a variety of purposes, including
+data quality. Metadata often provide the information necessary to understand data
+and/or evaluate them.
+
+We identified the following steps involved in data quality assessment particularly for LOD: 
+\begin{enumerate}
+\item Requirements analysis (optional)
+\item Data Quality Checklist
+\item Statistics and low-level analysis
+\item Aggregated and higher level metrics
+\item Comparison (optional)
+\item Interpretation
+\end{enumerate}
+Table~\ref{metricsteps} comprises of the steps involved in the data quality assessment process. 
+
+Assessment steps: related to the common steps of each work used to assess the quality in LOD. 
+For each step we provide input and output, a supported tool and the involvement of the user in the tool usage.  
+The "Assessment steps" measures the quality of data collections along relevant quality dimensions; in particular the measurement of quality dimensions is provided by a set of metrics defined for each dimension. 
+From the selected approaches we identify the following sequence of activities customized by different data quality methods:
+\begin{itemize}
+\item Requirements analysis (optional): The multidimensionality of the information quality makes it dependent on a number of factors that can be achieved by the analyses of the user requirements. The requirement analysis is optional since it is not always provided from the methods provided in LOD related approaches.
+\item Data Quality Checklist: estimates only those metrics for which we may answer yes or no. 
+\item Statistics and low-level analysis: provides some generic statistics on the dataset based on some heuristics.
+\item Aggregated and higher level metrics: in this category we include all the metrics that are not included in the Data Quality Checklist. Furthermore, in this step the single metrics or the combination of them produce a value within a range [0;1]. 
+\item Comparison (optional): used when the resulted measurements provided in step "Aggregated and higher level metrics" are compared to reference values such as previous values from dataset in the same domain or gold standard values, in order to enable a diagnosis of quality. 
+\item Interpretation: gives an interpretation to the results obtained from step Data Quality Checklist or Aggregated and higher level metrics.
+\end{itemize}
+
+\begin{table*}[htb]
+\caption{Data quality assessment steps}
+\label{metricsteps}
+\begin{tabular}{ | p{2cm} | p{3.3cm} | p{3.7cm} | p{1.5cm} | c | c | c | }
+\hline
+\textbf{Steps} & \textbf{Input} & \textbf{Output} & \textbf{Tool support} & \multicolumn{2}{c}{\textbf{User involvement }} & \cr
+\hline
+& & & & \textbf{Automated} & \textbf{Semi-automated} & \textbf{Manual} \\
+\hline
+\textbf{Requirements analysis (optional)} & Assessment of data quality, 2 types of users: \begin{itemize} \item who know the problem with their data \item who do not know the problem with their data \end{itemize} & - & - & - & - & - \\
+\hline
+\textbf{Data quality checklist} & Checklist of dimensions which have a binary evaluation & Results of the evaluation - 0 (no) or 1 (yes) & Flemming et al., 2010  & - & - & - \\
+\hline
+\textbf{Statistics and low level analysis} & Dataset & \multirow{3}{*}{Overview statistics of the dataset} & LODStats & \tick & - & - \\
+\cline{4-7}
+ & & & Google Refine & \tick & - & - \\
+\hline
+\textbf{Aggregated and higher level metrics} & Dimensions not included in Step 2 & \multirow{8}{3cm}{Results of the evaluation of these dimensions in a range from 0 to 1}
+ & WIQA & - & - & \tick \\
+ \cline{4-7}
+ & & & ProLOD & - & \tick & - \\
+ \cline{4-7}
+ & & & Flemming et al., 2010 & - & \tick & - \\
+ \cline{4-7}
+ & & & LinkQA & \tick & - & - \\
+ \cline{4-7}
+ & & & RDF Validator & - & \tick & - \\
+ \cline{4-7}
+ & & & Sieve & - & - & \tick \\
+ \cline{4-7}
+ & & & EvoPat & - & - & \tick \\
+ \cline{4-7}
+ & & & ORE & - & \tick & - \\
+\hline
+\textbf{Comparison (optional)} & \begin{itemize} \item Target/derived dataset \item Assessment results from step 2 and 4 \item Original dataset \end{itemize} & \begin{itemize} \item Evaluation of the representation \item Evaluation between datasets in the same domain \end{itemize} & - & - & - & - \\
+\hline
+\textbf{Interpretation} & Assessment results from Step 2 and 4 & Explanation of the results & WIQA & - & - & \tick \\
+\hline
+\end{tabular}
+\end{table*}

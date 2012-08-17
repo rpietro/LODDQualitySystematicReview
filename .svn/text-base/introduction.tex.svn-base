@@ -1,0 +1,26 @@
+The advent of semantic web technologies, as a enabler of Linked Open Data (LOD), has swept the world with an unprecedented data volume with close to 50 billion facts represented as triples.  
+Although accumulating massive amounts of data is certainly a step in the right direction, data is only as good as it's quality.  
+On the Data Web we have very varying quality of information and from various domains.
+Biological and health care data are no exception, with widespread availability of data in a wealth of areas including drugs, clinical trials, medicine, proteins, diseases all published as Linked Data amounting to 2.3 billion triples.
+
+Data quality is commonly defined as the \textit{fitness of use} for a certain application or use case.
+However, even datasets with quality problems might be useful for certain applications, as long as the quality is in the required range.
+In the case of DBpedia, for example, the data quality is perfectly sufficient for enriching Web search with facts or suggestions about common sense information, such as entertainment topics (similarly to Google's recently launched knowledge graph).
+In such a scenario, where the DBpedia background knowledge can be, for example, used to show the movies Franka Potente was starring in and actors she played with it is rather neglectable if, in relatively few cases, a movie or an actor is missing.
+For developing a medical application, on the other hand, the quality of DBpedia is probably completely insufficient. 
+It is to be noted that inspite of varying quality on the traditional document-oriented Web, it is still perceived to be extremely useful by most people.
+Consequently, the key challenge is to determine the quality of datasets published on the Web and make this quality information explicit.
+Other than on the document Web, where information quality can be only indirectly (e.g. page rank) or vaguely defined, we can have much more concrete and measurable data quality indicators for structured information (i.e. data), such as correctness of facts, adequacy of semantic representation or degree of coverage.
+
+There are already many methodologies and frameworks available for assessing data quality which address different aspects of this task by proposing appropriate tools.
+Despite quality in LOD being an essential concept, few efforts are currently in place to standardize how quality tracking and assurance should be implemented.
+Therefore, in this article we present a survey of existing approaches, that have been published for assessing the data quality of Linked Data datasets. 
+We attempt to gather the most notable approaches proposed so far in the literature, present them concisely in a tabular format and group them under a classification scheme. 
+In particular, we formalise the commonly used terminologies across papers related to data quality.
+Additionally, a generalisation of the dimensions, criteria and indicators is presented along with an overview of the steps involved in the quality assessment. 
+This is done to help researchers and implementors have a clearer view of existing work, thereby encouraging further experimentation.
+
+%corpus, dimensions, exhaustive coverage,reproducible
+%Add text from http://goo.gl/0Bdkn.
+%Assuring data quality is problematic within SW applications as they operate on an unbound, dynamic set of autonomous data sources. 
+%RDF publishers are prone to making errors which compromise the effectiveness of applications leveraging the resulting data. 
